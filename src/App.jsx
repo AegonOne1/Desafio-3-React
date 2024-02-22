@@ -3,12 +3,13 @@ import { useState } from 'react';
 import TableList from './components/Listado'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FormularioAddColab from './components/Formulario';
+import { BaseColaboradores } from './assets/BaseColaboradores';
 
 
 const App = () => {
-  const [colab, setColab] = useState([])
+  const [colab, setColab] = useState(BaseColaboradores)
 
-  const addColab = (newColab) => {
+  const addColab = (newColab) => {                             
     setColab([...colab, newColab])
   }
 

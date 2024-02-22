@@ -1,12 +1,10 @@
 import { Table } from "react-bootstrap";
-import { BaseColaboradores } from "../BaseColaboradores";
 
-const TableList = () => {
+const TableList = ({ colaboradores }) => {
     return (
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Nombre</th>
             <th>Correo</th>
             <th>Edad</th>
@@ -15,9 +13,8 @@ const TableList = () => {
           </tr>
         </thead>
         <tbody>
-          {BaseColaboradores.map((colaborador) => (
+          {colaboradores.map((colaborador) => (
             <tr key={colaborador.id}>
-              <td>{colaborador.id}</td>
               <td>{colaborador.nombre}</td>
               <td>{colaborador.correo}</td>
               <td>{colaborador.edad}</td>

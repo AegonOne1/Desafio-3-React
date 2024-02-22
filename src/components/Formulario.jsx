@@ -9,7 +9,7 @@ const FormularioAddColab = ({ onAddColab }) => {
       cargo: "",
       telefono: "",
     });
-  
+  console.log(FormularioAddColab)
     const handleChange = (event) => {
       const { name, value } = event.target;
       setNewColab((prevColaborador) => ({
@@ -17,11 +17,10 @@ const FormularioAddColab = ({ onAddColab }) => {
         [name]: value,
       }));
     };
-  
+                     
     const handleSubmit = (event) => {
       event.preventDefault();
       if (
-        newColab.id &&
         newColab.nombre &&
         newColab.correo &&
         newColab.edad &&
@@ -44,13 +43,6 @@ const FormularioAddColab = ({ onAddColab }) => {
   
     return (
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="id"
-          placeholder="ID"
-          value={newColab.id}
-          onChange={handleChange}
-        />
         <input
           type="text"
           name="nombre"
