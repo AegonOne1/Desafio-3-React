@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import './App.css'
+import { useState } from 'react'
 import TableList from './components/Listado'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import FormularioAddColab from './components/Formulario'
@@ -15,12 +16,16 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Lista de Colaboradores</h1>
-      <FiltroBusqueda colaboradores={colab} setColaboradores={setColabFiltrados} />
-      <TableList colaboradores={colabFiltrados} />
-      <h2>Agregar Colaborador</h2>
-      <FormularioAddColab onAddColab={addColab} />
+    <div className='container'>
+      <div className='table'>
+        <h1 className='titulo'>Lista de Colaboradores</h1>
+        <FiltroBusqueda colaboradores={colab} setColaboradores={setColabFiltrados} />
+        <TableList colaboradores={colabFiltrados} />
+      </div>
+      <div className='formulario'>
+        <h2>Agregar Colaborador</h2>
+        <FormularioAddColab onAddColab={addColab} />
+      </div>
     </div>
   );
 }

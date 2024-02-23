@@ -54,41 +54,54 @@ const FormularioAddColab = ({ onAddColab }) => {
         <input
           type="text"
           name="nombre"
-          placeholder="Nombre"
+          placeholder="Nombre del Colaborador"
+          className="inputsClass"
           value={newColab.nombre}
           onChange={handleChange}
         />
         <input
           type="email"
           name="correo"
-          placeholder="Correo"
+          placeholder="Correo del Colaborador"
+          className="inputsClass"
           value={newColab.correo}
           onChange={handleChange}
         />
         <input
           type="number"
           name="edad"
-          placeholder="Edad"
+          placeholder="Edad del Colaborador"
+          className="inputsClass"
           value={newColab.edad}
           onChange={handleChange}
         />
         <input
           type="text"
           name="cargo"
-          placeholder="Cargo"
+          placeholder="Cargo del Colaborador"
+          className="inputsClass"
           value={newColab.cargo}
           onChange={handleChange}
         />
         <input
           type="number"
           name="telefono"
-          placeholder="Telefono"
+          placeholder="Telefono del Colaborador"
+          className="inputsClass"
           value={newColab.telefono}
           onChange={handleChange}
         />
-        <button type="submit">Agregar</button>
+        <button 
+        type="submit"
+        className="buttonClass">
+        Agregar Colaborador
+        </button>
       </form>
-      <ConfirmarFormulario errorMessage={errorMessage} successMessage={successMessage} />
+      <ConfirmarFormulario 
+      className='centradoAlerta' 
+      errorMessage={errorMessage} 
+      successMessage={successMessage} 
+      />
     </div>
   )
 }

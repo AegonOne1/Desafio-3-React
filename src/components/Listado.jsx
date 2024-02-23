@@ -2,7 +2,8 @@ import { Table } from "react-bootstrap"
 
 const Listado = ({ colaboradores }) => {
   return (
-    <Table striped bordered hover>
+    <div className="contenedor">
+    <Table striped bordered hover className="tabla de contenido">
       <thead>
         <tr>
           <th>Nombre</th>
@@ -24,6 +25,7 @@ const Listado = ({ colaboradores }) => {
         ))}
       </tbody>
     </Table>
+    </div>
   )
 }
 

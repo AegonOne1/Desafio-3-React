@@ -21,10 +21,11 @@ const FiltroBusqueda = ({ colaboradores, setColaboradores }) => {
 
 
   return (
-    <div>
+    <div >
       <input
+        className="buscador"
         type="text"
-        placeholder="Filtrar Colaborador"
+        placeholder="Buscar un Colaborador"
         value={busqueda}
         onChange={handleBusquedaChange}
       />

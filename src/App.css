@@ -1,0 +1,87 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.buscador{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    margin: 1rem 0px;
+    border-radius: 5px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.tabla-de-contenido {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+
+
+.formulario{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 110px;
+}
+
+.inputsClass{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 7px;
+}
+ 
+.buttonClass{
+    display: flex;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    background-color: rgb(88, 30, 156);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.centradoAlerta{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario{
+        margin-top: 20px;
+    }
+}
