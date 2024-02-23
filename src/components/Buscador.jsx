@@ -18,10 +18,7 @@ const FiltroBusqueda = ({ colaboradores, setColaboradores }) => {
     setColaboradores(colaboradoresFiltrados);
   }
 
-  const handleLimpiarBusqueda = () => {
-    setBusqueda("")
-    setColaboradores(colaboradores)
-  }
+
 
   return (
     <div>
@@ -31,7 +28,6 @@ const FiltroBusqueda = ({ colaboradores, setColaboradores }) => {
         value={busqueda}
         onChange={handleBusquedaChange}
       />
-      <button onClick={handleLimpiarBusqueda}>Limpiar</button>
     </div>
   )
 }

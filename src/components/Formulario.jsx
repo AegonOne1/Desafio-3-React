@@ -80,7 +80,7 @@ const FormularioAddColab = ({ onAddColab }) => {
           onChange={handleChange}
         />
         <input
-          type="tel"
+          type="number"
           name="telefono"
           placeholder="Telefono"
           value={newColab.telefono}
